@@ -27,32 +27,36 @@ Usage
 To insert the country codes.
 	::
 		
-		$ dig gitub.com | ./ipcountry.py 
+		$ dig github.com | ./ipcountry.py
 		... snip ...
 		;; ANSWER SECTION:
-		gitub.com.		300	IN	A	[CH:141.8.224.239]
+		github.com.		30	IN	A	[US:192.30.252.131]
 		
 		;; AUTHORITY SECTION:
-		gitub.com.		3278	IN	NS	ns100.rookdns.com.
-		gitub.com.		3278	IN	NS	ns99.rookdns.com.
+		github.com.		1511	IN	NS	ns2.p16.dynect.net.
+		github.com.		1511	IN	NS	ns3.p16.dynect.net.
+		github.com.		1511	IN	NS	ns4.p16.dynect.net.
+		github.com.		1511	IN	NS	ns1.p16.dynect.net.
 		
 		;; ADDITIONAL SECTION:
-		ns99.rookdns.com.	231	IN	A	[CH:141.8.224.239]
-		ns100.rookdns.com.	231	IN	A	[CH:141.8.224.240]
+		ns1.p16.dynect.net.	3097	IN	A	[US:208.78.70.16]
+		ns2.p16.dynect.net.	3097	IN	A	[US:204.13.250.16]
+		ns3.p16.dynect.net.	3097	IN	A	[US:208.78.71.16]
+		ns4.p16.dynect.net.	3097	IN	A	[US:204.13.251.16]
 		... snip ...
 	
-	The country code 'CH' (which means 'Switzerland') is inserted.
+	The country code 'US' (which means 'United States') is inserted.
 
 To insert the country names instead of the codes.
 	::
 		
-		$ dig gitub.com | ./ipcountry.py -n
+		$ dig github.com | ./ipcountry.py -n
 		... snip ...
 		;; ANSWER SECTION:
-		gitub.com.		289	IN	A	[Switzerland:141.8.224.239]
+		github.com.		30	IN	A	[United States:192.30.252.128]
 		... snip ...
 	
-	The country name 'Switzerland' is inserted.
+	The country name 'United States' is inserted.
 
 See also help message.
 	::

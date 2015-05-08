@@ -25,6 +25,7 @@ Usage
 -------------------
 
 To insert the country codes.
+	
 	::
 		
 		$ dig github.com | ./ipcountry.py
@@ -48,6 +49,7 @@ To insert the country codes.
 	The country code 'US' (which means 'United States') is inserted.
 
 To insert the country names instead of the codes.
+	
 	::
 		
 		$ dig github.com | ./ipcountry.py -n
@@ -59,6 +61,7 @@ To insert the country names instead of the codes.
 	The country name 'United States' is inserted.
 
 See also help message.
+	
 	::
 		
 		$ ./ipcountry.py --help
